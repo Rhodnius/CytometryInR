@@ -121,19 +121,19 @@ library(Rtsne)
 install.packages("uwot")
 library("uwot")
 
-##### Problem#1
+##### Problem#1 -----
 
 PeacoQC::PeacoQC		#Peak-based detection of high quality cytometry data
 PeacoQC::PeacoQCHeatmap		#Make overview heatmap of quality control analysis
 PeacoQC::PlotPeacoQC    #Visualise deleted cells of PeacoQC
 
-#### problem#2
+#### problem#2 -----
 
 # * How many cytometry packages? A=/ 69 packages
 # * the author/maintainer with the most contributed cytometry R packages A=/ Greg Finak and Mike Jiang
 # * couple packages that you would be interested in exploring more in-depth later in the course: ggcyto, CATALYST, COMPASS and diffcyt
 
-### Problerm #3
+### Problem #3 -----
 
-# I am still working in R studio. I promes I will try to migrate to Positron.
+# I am still working in R studio (and I feel very comfortable on it). I will try to migrate to Positron, but not yet...
 
