@@ -11,7 +11,7 @@
 
   <meta name="author" content="David Rach">
   <meta name="dcterms.date" content="2026-02-01">
-  <title>Cytometry in R – Using Floreada</title>
+  <title>Cytometry in R – Getting Help</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -137,7 +137,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Using Floreada</h1>
+  <h1 class="title">Getting Help</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -156,6 +156,9 @@ David Rach
 <p><a href="https://www.gnu.org/licenses/agpl-3.0.en.html"><img data-src="https://img.shields.io/badge/license-AGPLv3-blue.png" alt="AGPL-3.0"></a> <a href="http://creativecommons.org/licenses/by-sa/4.0/"><img data-src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg" alt="CC BY-SA 4.0"></a></p>
 </div>
 </section>
+<section class="slide level2">
+
+</section>
 <section>
 <section id="background" class="title-slide slide level1 center">
 <h1>Background</h1>
@@ -170,7 +173,7 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>As a “Cytometry in R” course, we will primarily be working in R. However, within our daily workflows and projects here at our flow cytometry core, we often use various flow cytometry softwares (like <a href="https://flowjo.com/flowjo10/download">FlowJo</a> or <a href="https://denovosoftware.com/">FCS Express</a>) for various tasks. Fortunately, R packages like <a href="https://www.bioconductor.org/packages/release/bioc/html/CytoML.html">CytoML</a> can allow us to import our manually drawn gates from existing FlowJo workspaces so that we can work with them in R.</p>
+<p>In the previous sections, we set up our <a href="../../course/00_GitHub/index.html">GitHub</a> account, installed the required <a href="../../course/00_WorkstationSetup/index.html">software</a>, and further explored various elements of <a href="../../course/00_Positron/index.html">Positron</a>, <a href="../../course/00_Git/index.html">Git</a> and <a href="../../course/00_Quarto/index.html">Quarto</a> that we will be using throughout the course.</p>
 </div>
 </div>
 </div>
@@ -190,47 +193,8 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>For this course, we are adamant about staying neutral in regards to both commercial software or instrument vendors as much as possible. If they have worked with the open-source community to make their files readable and accessible via R, we will showcase how to integrate those tools into your own workflows. At the same time, this being a <u><strong>free</strong></u> course, it doesn’t make sense to turn around and ask you to go and either free trial or buy an expensive software license just to see how a particular free R package works.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>Fortunately, for showing how to use this <a href="https://www.bioconductor.org/packages/release/bioc/html/CytoML.html">CytoML</a> functionality, we can use <a href="https://floreada.io/">Floreada.io</a>. It is a simple (but free) web-based analysis platform that can be used to draw manual gates for your .fcs files of interest. These can then be saved as Floreada workspaces for later use. We typically recommend it to users from labs that do flow experiments infrequently. Fortunately thanks to the hard work of its <a href="https://floreada.io/about">developers</a>, it can also save the gated files as <a href="https://flowjo.com/flowjo10/download">FlowJo</a> v10 .wsp files, which with a small workaround become usable within the <a href="https://www.bioconductor.org/packages/release/bioc/html/CytoML.html">CytoML</a> pipeline.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>To facilitate this, we will provide a small walk-through of how to use it for those who want to create a .wsp with their own .fcs files for <a href="https://umgcccfcsr.github.io/CytometryInR/Schedule#gating-sets">Week 5</a>.</p>
+<p>This is our first year offering the course. Although we can and will answer questions during the livestreams, given the number of people signed up that might have a question, we want to make sure to provide multiple avenues by which you can get help and feedback throughout. These include the <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions">Discussions Forum</a>, where you can ask questions, discuss topics, get feedback and celebrate wins; and 2) turning in optional take-home problems via a pull request, in which the course instructors will take a look and provide additional feedback.</p>
+<p>In this walk-through, we go over how to use these resources.</p>
 </div>
 </div>
 </div>
@@ -241,13 +205,12 @@ David Rach
 
 </section></section>
 <section>
-<section id="walk-through" class="title-slide slide level1 center">
-<h1>Walk-through</h1>
+<section id="getting-started" class="title-slide slide level1 center">
+<h1>Getting Started</h1>
 
 </section>
-<section id="floreada" class="slide level2">
-<h2>Floreada</h2>
-<h3 id="loading-dataset">Loading Dataset</h3>
+<section id="discussions-forum" class="slide level2">
+<h2>Discussions Forum</h2>
 <div class="fragment">
 <div title=".">
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -259,8 +222,7 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>First, open your web browser and navigate to the <a href="https://floreada.io/">website</a></p>
-<p>Click on Start to proceed to the next page.</p>
+<p>On the course’s <a href="https://github.com/UMGCCCFCSR/CytometryInR">GitHub repository</a>, we have opened up a <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions">Discussions</a> page that we plan to use as a community forum. We hope that it will serve multiple functions, from providing a better sense of community for the online participants, to facilitating asking and receiving help on something that is not clear, provide feedback about something that it not working out, as well as a place to celebrate and show off your coding wins.</p>
 </div>
 </div>
 </div>
@@ -270,35 +232,7 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/01_LandingPage.png" class="r-stretch"></section>
-<section class="slide level2">
-
-
-<img data-src="images/02_InitialPage.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>Once that is done, select the File tab on the upper navigation bar. Then click on Open File(s).</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/03_OpenFiles.png" class="quarto-figure quarto-figure-left r-stretch"></section>
+<img data-src="images/Discussion.png" class="r-stretch"></section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -312,7 +246,28 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>From there, select your .fcs files of interest, and click Open.</p>
+<p>To keep the Discussions forum semi-organized, we have set up several categories, please select the appropiate category when opening a new discussion!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="code-of-conduct">Code of Conduct</h3>
+<div class="fragment">
+<div title=".">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>.</strong></p>
+</div>
+<div class="callout-content">
+<p>We ask that all course participants read and adhere to the spirit of our <a href="https://github.com/UMGCCCFCSR/CytometryInR?tab=coc-ov-file">Code of Conduct</a>. We are all human, at different points in our learning journeys, so what may be obvious to you at your point of your learning journey may have necessarily be obvious to someone just getting started. This course is our giving back to those in the community, but is on a voluntary basis in addition to our regular workload. While we try to reply quickly, sometimes our cell sorters fully melt down sending everything into chaos. We will reply when we can.</p>
 </div>
 </div>
 </div>
@@ -322,7 +277,162 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/04_SelectFCSFiles.png" class="r-stretch"></section>
+<img data-src="images/CodeOfConduct.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="announcements">Announcements</h3>
+
+<img data-src="images/Announcements.png" class="r-stretch"><div class="fragment">
+<div title=".">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>.</strong></p>
+</div>
+<div class="callout-content">
+<p>When we send out an email to all participants, we will also repost it as an announcement. This ensures that even if you are not on our mailing list, you will still be able to have access to important information and course updates.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+
+<img data-src="images/000_Announcements.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="general">General</h3>
+
+<img data-src="images/General.png" class="r-stretch"><div class="fragment">
+<div title=".">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>.</strong></p>
+</div>
+<div class="callout-content">
+<p>This section category can be used for any discussions that you think are worth having, that don’t fall under any of the other category. Good examples are continuing a discussion that was held during one of the livestreams; wanting to discuss and dive further into a given week’s topic; or bringing in additional resources that you found useful to understandingn something that didn’t click initially. This space is for the community to shape as they see best.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+
+<img data-src="images/000_General.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="ideas">Ideas</h3>
+
+<img data-src="images/Ideas.png" class="r-stretch"><div class="fragment">
+<div title=".">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>.</strong></p>
+</div>
+<div class="callout-content">
+<p>Have an idea for a new topic or a way to improve the course? We would love to hear them. Provide as many details, and ideally, an example, and if it is doable, we will try to implement them.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+
+<img data-src="images/000_Ideas.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="introductions">Introductions</h3>
+
+<img data-src="images/Introductions.png" class="r-stretch"><div class="fragment">
+<div title=".">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>.</strong></p>
+</div>
+<div class="callout-content">
+<p>Online courses can be odd in terms of replicating in-person dynamics. Fortunately, we have gathered the largest cohort of “cytometrist with no-to-little flow experience trying to learn R at the same time” that the world has ever seen, so best to take advantage of this while we can. Treat this section as if we had just met at a conference, tell us about yourself, what brings you here, and what you want to hopefully be able to do after the course ends.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+
+<img data-src="images/000_Introductions.png" class="r-stretch"></section>
+<section id="polls" class="slide level2">
+<h2>Polls</h2>
+
+<img data-src="images/Polls.png" class="r-stretch"><div class="fragment">
+<div title=".">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>.</strong></p>
+</div>
+<div class="callout-content">
+<p>Occasionally, we will need to gather community feedback on what is working and what is not working. We will sporadically post Polls for this purpose.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+
+<img data-src="images/000_Polls.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="qa">Q&amp;A</h3>
+
+<img data-src="images/Q&amp;A.png" class="r-stretch"><div class="fragment">
+<div title=".">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>.</strong></p>
+</div>
+<div class="callout-content">
+<p>The Questions and Answers (Q&amp;A) section is where you go if something is not clear, not working, and you are trying to troubleshoot your way through it. First thing before posting, search! to see if someone has already asked the question. If you don’t find anything, go ahead and open a new discussion.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+
+<img data-src="images/000_QandA.png" class="r-stretch"></section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -336,7 +446,7 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>The .fcs files will now load in, and you should see a view similar to the one below. On the left side-bar, you have your gating options (Rectangle, Polygon, Range, Elipse, Quad, etc). Next to these on the right you have the FCS files that are loaded into the workspace. Then on the right, you have the visual display for your selected specimen.</p>
+<p>Since we are not at your computer, and don’t have your dataset, when troubleshooting it is best to include a minimal reproducible example of the issuen you are encountering, slimming down the number of files needed to be transferred, and generalizing down the code so that other course participants and instructors can follow along. If this is not doable, or if the problem requires added context (and larger files), create a new repository on your GitHub, make it public, and share the links to it in your post. The goal would be to download the folder and be able to replicate the issue that you are encountering.</p>
 </div>
 </div>
 </div>
@@ -346,11 +456,12 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/05_InitialFiles.png" class="r-stretch"></section>
+<img data-src="images/000_QandAExample.png" class="r-stretch"></section>
 <section class="slide level2">
 
-<h3 id="switching-axis-markers">Switching Axis Markers</h3>
-<div class="fragment">
+<h3 id="show-and-tell">Show and Tell</h3>
+
+<img data-src="images/ShowAndTell.png" class="r-stretch"><div class="fragment">
 <div title=".">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -361,7 +472,7 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>If you left click on the axis name (SSC-H or FSC-H in this case), you will be able to select other markers by which to gate your specimen. For the provided example, we were using a raw spectral flow cytometry .fcs file, so the names of the detectors are present.</p>
+<p>Where Q&amp;A section is for getting help on code that is frustratingly not working, Show and Tell is where to go and celebrate when you finally get things to work. Share your wins, show us the extra pretty graphs, bizarre autofluorescence signatures, or odd outputs that just make you laugh.</p>
 </div>
 </div>
 </div>
@@ -371,56 +482,15 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/06_LeftClick.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>For now, I plan to start off by gating for singlets. I switch the y-axis to FSC-H, and then proceed to switch the x-axis to FSC-A.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+<img data-src="images/000_ShowAndTell.png" class="r-stretch"></section>
 <section class="slide level2">
 
 
-<img data-src="images/07_LeftClickXaxis.png" class="r-stretch"></section>
-<section class="slide level2">
+<img data-src="images/Timeline.png" class="r-stretch"></section>
+<section id="issues" class="slide level2">
+<h2>Issues</h2>
 
-<h3 id="creating-gates">Creating Gates</h3>
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>With this done, I can now select the Poly gate tab on the upper left.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/08_PolygonGateSelect.png" class="r-stretch"></section>
+<img data-src="images/Issues.png" class="r-stretch"></section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -434,17 +504,13 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>Then manually click on the locations on the plot to add the individual gate nodes.</p>
+<p>Most of the time, if you are having trouble getting you code to run, you should first stop after some initial troubleshooting should be to open a new <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions">Discussion</a> under the Q&amp;A category. Here you will be able to get both community and instructor help and suggestions to hopefully resolve whatever is going on.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="slide level2">
-
-
-<img data-src="images/08_PolygonGateStart.png" class="r-stretch"></section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -458,7 +524,7 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>To complete the gate, I click back to the original node point. At this point, the popup will allow you to name the gate.</p>
+<p>The Issues page is primarily meant for course-specific problems that require the course instructor intervention to fix. For example, we release a new week of material, and while it runs fine for both Windows and Linux, the code fails to run for all MacOS users. While you may be able to find workarounds on your own, it’s ultimately our responsibility to help provide a solution so that everyone can move forward. This is the situation where opening an Issue is appropiate.</p>
 </div>
 </div>
 </div>
@@ -468,7 +534,7 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/08_PolygonGateCreate.png" class="r-stretch"></section>
+<img data-src="images/000_IssuesExample.png" class="r-stretch"></section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -482,17 +548,13 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>To adjust the polygon gate, you can click on a node and drag it to expand or contract in a particular direction</p>
+<p>Similarly, if our code contains a wrong argument, is returning a deprecation warning, etc. open an issue to let us know. While we may not be able to fix something that is not directly related to our code, we can redirect it to the package maintainers so that they can fix the issue.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="slide level2">
-
-
-<img data-src="images/08_PolygonGateNode.png" class="r-stretch"></section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -506,20 +568,15 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>To move the entire gate, first click on a node to select the gate, then click in the center of the gate to adjust its location.</p>
+<p>And likewise, if you find multiple typos in the documentation, you can open an issue and propose carrying out a pull-request to fix them.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="slide level2">
-
-
-<img data-src="images/08_PolygonGateCenter.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="additional-gates">Additional Gates</h3>
+<section id="submitting-take-home-problems" class="slide level2">
+<h2>Submitting Take-Home Problems</h2>
 <div class="fragment">
 <div title=".">
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -531,41 +588,13 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>Unfortunately for those with the force-of-habit from using other softwares, double-clicking within the gate doesn’t do anything. To continue gating on the selected cells, you will need to click on the newly created gate name on the left. This will result in visualizing the isolated cells.</p>
+<p>Each week, during the course, we introduce and cover the main concepts for the particular concept. Our goal is to provide you with the necessary code and enough code to be able to get the jist. However, to become comfortable and be able to apply what you have learned, you will need to explore beyond our examples, try it with your own datasets, encounter things that don’t work, and troubleshoot your way through them. It’s this cycle of venturing into the unknown that develops strong coding skills that are needed to overcome any barrier you encounter. The goal of the take-home questions is to provide some less curated problems that will take a little longer to answer to help get you started on your own exploration of the topic.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="slide level2">
-
-
-<img data-src="images/09_SecondLanding.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>Once this is done, you can repeat the previous steps to change the axis markers and create a second gate. For this example, we went with a “Cells” gate to exclude debris from this particular sample.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/09_SecondGate.png" class="r-stretch"></section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -579,40 +608,13 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>Having created the “Cells” gate, we will be switching gating based on FSC and SSC to using the detector parameters.</p>
-<p>The samples in this example were acquired to derive the cell counts and concentration of various cell populations within cryopreserved cord and peripheral blood mononuclear cells (CBMC and PBMC) specimens after thawing.</p>
-<p>They were stained with CD19 BV421, CD45 PE, and CD14 APC on a <a href="https://spectrum.cytekbio.com/">5-Laser Cytek Aurora</a>, before unmixing, this would correspond respectively to V1, YG1/B4, R1/YG4 peaks respectively.</p>
+<p>As previously mentioned, these take-home problems are completely <strong>optional</strong>. If you are in the middle of solving them and want to seek feedback from then community and course instructors, open a <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions">Discussion</a> under the general category is the way to go.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="slide level2">
-
-<h3 id="scalingtransformation">Scaling/Transformation</h3>
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>When we switch the axis, we can see that the scaling/transformation is not ideal, as the staining and not-staining populations are scrunched up together in the center of the plot.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/10_Untransformed.png" class="r-stretch"></section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -626,17 +628,13 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>To change the scaling/transformation, we need to click directly on the axis.</p>
+<p>However, if you have completed them, and want course instructor feedback, you can submit them to us in the form of a pull-request to the CytometryInR repo’s homework branch. We will take a look, offer constructive suggestions, and when ready merge the solution. This will also result in GitHub listing you as a contributor to the course.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="slide level2">
-
-
-<img data-src="images/10_ClickGrid.png" class="r-stretch"></section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -650,7 +648,28 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>From there, when we click on the drop-down, we see the various transformation options. We will select <a href="https://pubmed.ncbi.nlm.nih.gov/16604519/">Logicle</a>, given we are working with spectral flow cytometry files.</p>
+<p>We will outline the basic steps of how to set up and open a pull-request, to help simplify the process.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="sync-your-fork">Sync your Fork</h3>
+<div class="fragment">
+<div title=".">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>.</strong></p>
+</div>
+<div class="callout-content">
+<p>First off, make sure to Sync your fork of the Cytometry in R project. That makes sure that all the commits present are up-to-date and simplifies the process of having the pull-request being merged.</p>
 </div>
 </div>
 </div>
@@ -660,7 +679,57 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/10_SelectLogicle.png" class="r-stretch"></section>
+<img data-src="images/00_Sync.png" class="r-stretch"></section>
+<section class="slide level2">
+
+
+<img data-src="images/00_Compare.png" class="r-stretch"></section>
+<section class="slide level2">
+
+
+<img data-src="images/02_Synced.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="pull-to-local">Pull to Local</h3>
+<div class="fragment">
+<div title=".">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>.</strong></p>
+</div>
+<div class="callout-content">
+<p>Having Synced your branch on GitHub, return to your computer, open the CytometryInR repository and <a href="../../course/00_Git/index.html#pull">pull</a> in the changes locally.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="create-own-folder-under-homeworks">Create own Folder under Homeworks</h3>
+<div class="fragment">
+<div title=".">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>.</strong></p>
+</div>
+<div class="callout-content">
+<p>Under the course folder, you will find folders for each week. Within these folders find the homework folder. This will appear empty except for a README file with ionstructions. It is within this folder you will need to create your own folder.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -674,7 +743,7 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>This y-axis values are subsequently visualized with the logicle transformation applied, increasing our resolution between the positive and negative population.</p>
+<p>To ensure there are no conflicts on the pull-request merge, please use your GitHub username as the folder name.</p>
 </div>
 </div>
 </div>
@@ -684,7 +753,7 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/10_LogicleY.png" class="r-stretch"></section>
+<img data-src="images/09_Homework.png" class="r-stretch"></section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -698,7 +767,7 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>We can then repeat this for the x-axis, adjusting the fine-tune options for the scaling as needed.</p>
+<p>Once you have your folder inside homework, go ahead and copy anything you are turning in from their respective working project folders. Remember, the goal is minimal reproducible example is the goal. Rendered Quarto Documents are preferred, but we will also accept scripts and small data files and images. a README.MD file with anything you want me to know,</p>
 </div>
 </div>
 </div>
@@ -708,10 +777,14 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/10_DoubleLogicleAxis.png" class="r-stretch"></section>
+<img data-src="images/10_TakeHomeReturnStructure.png" class="r-stretch"></section>
 <section class="slide level2">
 
-<h3 id="navigating-gating-hierarchy">Navigating Gating Hierarchy</h3>
+
+<img data-src="images/11_SelfContained.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="sign-off-commit">Sign off Commit</h3>
 <div class="fragment">
 <div title=".">
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -723,7 +796,7 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>With this done, let’s first draw a rectangle gate for the CD45+ (B4-A) cells.</p>
+<p>Now that everything is present, Sign Off and Commit the change.</p>
 </div>
 </div>
 </div>
@@ -733,9 +806,10 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/10_CD45Gate.png" class="r-stretch"></section>
+<img data-src="images/12_Commit.png" class="r-stretch"></section>
 <section class="slide level2">
 
+<h3 id="push-branch-to-github.">Push Branch to GitHub.</h3>
 <div class="fragment">
 <div title=".">
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -747,7 +821,7 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>And then selecting that population by clicking on the gate name, let’s proceed and gate the CD19+ cells (V2-A).</p>
+<p>Proceed to push the branch to GitHub.</p>
 </div>
 </div>
 </div>
@@ -757,9 +831,13 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/10_CD19Gate.png" class="r-stretch"></section>
+<img data-src="images/13_Sync.png" class="r-stretch"></section>
 <section class="slide level2">
 
+</section></section>
+<section>
+<section id="re-sync-if-necessary" class="title-slide slide level1 center">
+<h1>Re-sync if necessary</h1>
 <div class="fragment">
 <div title=".">
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -771,7 +849,7 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>As you can see, we now have the various gates present in the gating hierarchy for the respective .fcs file. To return to a previous gated population, we would click on the parent population above it.</p>
+<p>If additional changes have occured to the parent CytometryInR repository, go ahead and update your branch. As long as your edits occurred within your folder inside homework folders, they should still be able to merge.</p>
 </div>
 </div>
 </div>
@@ -781,9 +859,14 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/11_ReturnToPrevious.png" class="r-stretch"></section>
+<img data-src="images/17_SyncMaybe.png" class="r-stretch"></section>
 <section class="slide level2">
 
+
+<img data-src="images/18_Update.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="open-a-pull-request">Open a pull-request</h3>
 <div class="fragment">
 <div title=".">
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -795,7 +878,7 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>We can subsequently add an additional gate at this gating level for the likely debris population (the threshold setting was suboptimal for this experimental run).</p>
+<p>To start a pull request, click to see how your commit is ahead by</p>
 </div>
 </div>
 </div>
@@ -805,56 +888,7 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/11_AdditionalGates.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="copying-gates">Copying Gates</h3>
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>This was the process for gating for a single specimen. To copy gates over to the other specimens, we have two options. First, holding down your Ctrl (or equivalent) button, you can click on the individual gate names.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/11_ControlHighlight.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>From there, you can drag them down to the next specimen and apply them.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/11_ApplyToNext.png" class="r-stretch"></section>
+<img data-src="images/14_Ahead.png" class="r-stretch"></section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -868,7 +902,7 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>Alternatively, you can drag down the highlighted gated to the Pipelines Tab, and apply to All Files. This will result in the gates being copied to all specimens in the experiment.</p>
+<p>Next, switch from the parent CytometryInR main branch (used for the website and course) to the homework branch for that respective week (used for the take-home problems).</p>
 </div>
 </div>
 </div>
@@ -878,11 +912,7 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/11_ApplyAllViaPipelines.png" class="r-stretch"></section>
-<section class="slide level2">
-
-
-<img data-src="images/13_PipelineAdjustAll.png" class="r-stretch"></section>
+<img data-src="images/15_BranchSwitch.png" class="r-stretch"></section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -896,7 +926,7 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>Adjustments within Pipelines will carry over to all other respective unmodified specimens that share it’s gates.</p>
+<p>Once this is done, select Pull request</p>
 </div>
 </div>
 </div>
@@ -906,7 +936,7 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/13_PipelineAdjustCD19.png" class="r-stretch"></section>
+<img data-src="images/16_PullRequest.png" class="r-stretch"></section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -920,7 +950,7 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>Once this is done, I recommend cycling through the gates for each specimen, just to ensure that the gates were positioned correctly before saving the workspace.</p>
+<p>Make sure to triple check it’s bound for the homeworks branch. If you see that it is not capable of merging, verify that your commit only contains files within your respective homework username folder. Fill in the required fields of the pull request.</p>
 </div>
 </div>
 </div>
@@ -930,33 +960,7 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/12_ClickAdjust.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="saving-workspace">Saving Workspace</h3>
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>With everyone now “correctly” gated, we can proceed to save the workspace so that we can reopen it later from another browser.</p>
-<p>To do this we open the File tab from the upper navigation bar, and select Save Workspace.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/14_SaveWorkspace.png" class="r-stretch"></section>
+<img data-src="images/20_PullRequestHomeworks.png" class="r-stretch"></section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -970,7 +974,28 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>From there we have a couple options, for now let’s select Floreada Workspace. Where it is saved at will depend on your individual browser settings, so watch for a popup.</p>
+<p>And when ready, create the pull request.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="wait-for-feedback">Wait for Feedback</h3>
+<div class="fragment">
+<div title=".">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>.</strong></p>
+</div>
+<div class="callout-content">
+<p>On our end, once you have created a pull request, we will review your work, offer constructive suggestions, etc. If I ask for revisions, all you would need to do is update your files, commit again on your side of the local forked repository.</p>
 </div>
 </div>
 </div>
@@ -980,7 +1005,77 @@ David Rach
 <section class="slide level2">
 
 
-<img data-src="images/14_FloreadaWorkspace.png" class="r-stretch"></section>
+<img data-src="images/22_StartReviewProcess.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="final-review-and-merge">Final Review and Merge</h3>
+<div class="fragment">
+<div title=".">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>.</strong></p>
+</div>
+<div class="callout-content">
+<p>If all is good, we will merge the pull request and your solution to the take-home problems will now be available on the homework branch.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+
+<img data-src="images/23_Merge.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="after-course">After course</h3>
+<div class="fragment">
+<div title=".">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>.</strong></p>
+</div>
+<div class="callout-content">
+<p>After the course completes, we will merge homework branch with the main branch, making the community solutions to the take-home problems additional coding examples that can be used by others following along after the course concludes.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="wrap-up" class="title-slide slide level1 center">
+<h1>Wrap-up</h1>
+<div class="fragment">
+<div title=".">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>.</strong></p>
+</div>
+<div class="callout-content">
+<p>In this walk-through, we covered the <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions">Discussions</a> Forum, mentioned appropiate use cases for the <a href="https://github.com/UMGCCCFCSR/CytometryInR/issues">Issues</a> page and provided the logistics of how to submit take-home problems as a pull request to the homework branch. We have now covered all the major elements that you will be using throughout the course.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 <section class="slide level2">
 
 <div class="fragment">
@@ -994,144 +1089,18 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>Alternatively (and crucially for the CytoML pipeline) we can also choose to save it as a FlowJo v10 .wsp file.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/14_FlowJoWorkspace.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>In both cases, you will end up with Workspace files that can be used later to access your created gates</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/WorkspaceFiles.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="reopening-workspace">Reopening Workspace</h3>
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>To reopen the Floreada workspace within the browser, reopen the website, and select the Open File(s) option.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/15_Reopening.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>From there, select both the Floreada Workspace file as well as the .fcs files</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/15_ReopeningSelectAll.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>At which point you will now be back to the point you last saved at.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/15_ReopenedWorkspace.png" class="r-stretch"></section>
-<section id="cytoml" class="slide level2">
-<h2>CytoML</h2>
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>Due to a unknown formatting bug, the Floreada produced FlowJo v10 .wsp is not directly accessible by CytoML at the time of this course. However, the issue is resolved as soon as the file is opened the first time within FlowJo v10, regardless of whether you have a log in or not. Strange? Yes, but we will take the workaround.</p>
-<p>So, for anyone on Windows or MacOS, download <a href="https://www.flowjo.com/flowjo10/overview">FlowJo v10</a>. Once installed, open the software, and close the login popups. Once there, open the Floreada created FlowJo.wsp file. Since you haven’t logged in, it won’t show any events. But it will correct the formatting bug. Close the software, and return to R. Your Floreada sourced .WSP file should now be readable by CytoML.</p>
-<p>Odd? For sure. Fixable? Likely, I will set a reminder to work with the Floreada and CytoML devs to see if we can cut out the need for this workaround.</p>
+<p>The next couple sections cover our thoughts <a href="">on AI use</a> in a course for coding beginners, and an optional walkthrough of how to use <a href="../../course/00_Floreada/index.html">Floreada</a> in preparation for some topics starting around Week 5.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section></section>
-<section id="wrap-up" class="title-slide slide level1 center">
-<h1>Wrap-up</h1>
-
-</section>
-
 <section id="additional-resources" class="title-slide slide level1 center">
 <h1>Additional Resources</h1>
-<p><a href="https://floreada.io/docs/">Floreada Documentation</a></p>
+<p><a href="https://github.blog/open-source/maintainers/create-a-home-for-your-community-with-github-discussions/">Create a Home for Your Community With GitHub Discussions</a></p>
+<p><a href="https://youtu.be/nCKdihvneS0?si=PaM7QmylZiGfU9v4">GitHub for Beginners: How to create a pull request in 4 minutes</a></p>
+<p><a href="https://www.youtube.com/watch?v=nP9Y72HQNaA">Five tips for Reviewing a GitHub pull request</a></p>
 <div style="text-align: right;">
 <p><a href="https://www.gnu.org/licenses/agpl-3.0.en.html"><img data-src="https://www.gnu.org/graphics/agplv3-with-text-162x68.png" alt="AGPL-3.0"></a> <a href="http://creativecommons.org/licenses/by-sa/4.0/"><img data-src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" alt="CC BY-SA 4.0"></a></p>
 </div>
