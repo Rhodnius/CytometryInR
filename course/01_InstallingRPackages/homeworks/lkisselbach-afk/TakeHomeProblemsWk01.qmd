@@ -1,6 +1,8 @@
 ---
 title: "Take-home Problems Week 01"
-format: pdf
+format: html
+embed-resources: true
+toc: true
 ---
 
 # Lynn Kisselbach
