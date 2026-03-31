@@ -2,7 +2,7 @@
 library(tidyverse)
 # install.packages('ggbeeswarm')
 library(ggbeeswarm)
-
+library(forcats)
 
 StorageLocation <- file.path("course", "06_Visualizing", "data")
 
@@ -22,8 +22,7 @@ Data <- Data |>
 Data$timepoint <- factor(Data$timepoint)
 
 Data$Condition <- factor(Data$Condition)
-
-Data$Condition <- fct_relevel(Data$Condition, c("SEB", "Ctrl", "PPD"))
+Data$Condition <- fct_relevel(Data$Condition, c("SEB", "Ctrl", "PPD")) #### using fct_relevel function from forcats package
 
   ##### plotting
   names(Data)
